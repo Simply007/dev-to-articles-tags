@@ -24,7 +24,7 @@ const main = async () => {
       tags[tag] = (tags[tag] || 0) + article.positive_reactions_count + article.comments_count
     }
   };
-  console.log(tags);
+  console.log(JSON.stringify(tags, null, 2));
 }
 
 (async () => {
